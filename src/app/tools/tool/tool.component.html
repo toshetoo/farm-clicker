@@ -1,0 +1,9 @@
+<div class="tool-card" (click)="addNewItem()">
+    <div class="card-body">
+        <img [src]="item.icon" class="tool-icon" alt="tool-image">
+    </div>
+    <div class="card-header">
+        <div>{{ item.name }} - {{ item.count }}</div>
+        <div>Price: {{ item.getPrice() | number : '1.2-2' }}</div>
+    </div>    
+</div>
